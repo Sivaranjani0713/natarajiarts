@@ -1,0 +1,32 @@
+.stats-section {
+    padding: 80px 0;
+    background: #ffffff;
+}
+
+.stat-number {
+    font-size: 35px;
+    font-weight: 700;
+    color: #f26a21;
+    margin-bottom: 10px;
+}
+
+.stat-label {
+    font-size: 18px;
+    font-weight: 500;
+    color: #4b5563;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .stats-section {
+        padding: 50px 0;
+    }
+
+    .stat-number {
+        font-size: 34px;
+    }
+
+    .stat-label {
+        font-size: 16px;
+    }
+}

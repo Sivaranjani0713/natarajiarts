@@ -1,0 +1,134 @@
+.gallery-section {
+    padding: 60px 0;
+    background: #f8f8f8;
+}
+
+.filter-btn {
+    border: 2px solid orange;
+    padding: 12px 35px;
+    margin: 8px;
+    border-radius: 50px;
+    background: white;
+    color: orange;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.filter-btn.active {
+    background: linear-gradient(135deg,
+            #ff9f1a,
+            #ff4d4d);
+    color: white;
+    border: none;
+}
+
+.image-card {
+    height: 330px;
+    overflow: hidden;
+    border-radius: 20px;
+    cursor: pointer;
+    background: white;
+}
+
+.image-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s;
+}
+
+.image-card:hover img {
+    transform: scale(1.08);
+}
+
+/* .gallery-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg,
+            rgba(255, 166, 0, 0.88),
+            rgba(239, 72, 72, 0.88));
+    opacity: 0;
+    transition: 0.4s ease;
+} */
+
+.image-card:hover .gallery-overlay {
+    opacity: 1;
+}
+
+.gallery-text {
+    position: absolute;
+    left: 28px;
+    bottom: -80px;
+    color: #fff;
+    transition: 0.45s ease;
+}
+
+.image-card:hover .gallery-text {
+    bottom: 28px;
+}
+
+.gallery-text h3 {
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 4px;
+    font-family: Georgia, serif;
+}
+
+.gallery-text p {
+    font-size: 18px;
+    margin: 0;
+    font-weight: 500;
+}
+
+.popup-image {
+    width: 100%;
+    max-height: 500px;
+    object-fit: contain;
+    border-radius: 15px;
+}
+
+.close-btn {
+    background: #ff7b00;
+    border: none;
+    padding: 10px 35px;
+    border-radius: 30px;
+}
+
+.close-btn:hover {
+    background: #ff5a00;
+}
+
+@media(max-width:768px) {
+
+    .image-card {
+        height: 230px;
+    }
+
+    .filter-btn {
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+
+    .gallery-text h3 {
+        font-size: 24px;
+    }
+
+    .gallery-text p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .filter-btn {
+        width: 45%;
+        padding: 10px 0;
+    }
+
+    .image-card {
+        height: 220px;
+    }
+
+    .gallery-text {
+        left: 20px;
+    }
+}

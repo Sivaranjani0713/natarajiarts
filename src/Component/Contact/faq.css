@@ -1,0 +1,93 @@
+.faq-section {
+    padding: 55px 0 55px;
+    background: #ffffff;
+}
+
+.faq-heading {
+    font-size: 45px;
+    font-weight: 800;
+    color: #1f2937;
+    font-family: Georgia, serif;
+    margin-bottom: 0 !important;
+}
+
+.title-line {
+    width: 75px;
+    height: 4px;
+    background: linear-gradient(to right, #ff7a18, #f04438);
+    margin: 0 auto 45px;
+}
+
+.faq-subtitle {
+    font-size: 18px;
+    color: #334155;
+    margin-bottom: 50px;
+}
+
+.faq-wrapper {
+    width: 70%;
+    margin: 0 auto;
+    /* max-width: 1120px; */
+}
+
+.faq-card {
+    background: #f8fafc;
+    border-radius: 18px;
+    padding: 30px;
+    margin-bottom: 32px;
+    transition: all 0.3s ease;
+}
+
+.faq-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.18);
+    background: #ffffff;
+}
+
+.faq-icon {
+    min-width: 25px;
+    height: 25px;
+    background: #ff7614;
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 16px;
+    margin-top: 4px;
+    font-size: 14px;
+}
+
+.faq-card h4 {
+    font-size: 21px;
+    font-weight: 800;
+    color: #111827;
+    font-family: Georgia, serif;
+    margin-bottom: 14px;
+}
+
+.faq-card p {
+    font-size: 17px;
+    line-height: 1.5;
+    color: #334155;
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .faq-heading {
+        font-size: 38px;
+    }
+
+    .faq-card {
+        padding: 24px 20px;
+    }
+
+    .faq-card h4 {
+        font-size: 21px;
+    }
+
+    .faq-card p,
+    .faq-subtitle {
+        font-size: 18px;
+    }
+}

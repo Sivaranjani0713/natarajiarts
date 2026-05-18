@@ -1,0 +1,166 @@
+.contact-info-section {
+    padding: 25px;
+    background: #ffffff;
+}
+
+.contact-info-section h1 {
+    font-family: Georgia, serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #0b2c4d;
+    margin-bottom: 45px;
+}
+
+.contact-info-list {
+    max-width: 780px;
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 26px;
+    padding: 15px 20px;
+    border-radius: 18px;
+    margin-bottom: 35px;
+    transition: all 0.3s ease;
+}
+
+.info-item:hover {
+    background: #ffffff;
+    box-shadow: 0 14px 35px rgba(0, 0, 0, 0.1);
+}
+
+.info-icon .icon-svg {
+    font-size: 20px;
+}
+
+.info-icon {
+    min-width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #ff9900, #f4512c);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+}
+
+.info-item h4 {
+    font-family: Georgia, serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #071f3a;
+    margin-bottom: 10px;
+}
+
+.info-item p {
+    font-size: 17px;
+    color: #6d7882;
+    margin-bottom: 6px;
+}
+
+.info-item span {
+    font-size: 13px;
+    color: #52657a;
+}
+
+.orange-text {
+    color: #f4512c !important;
+}
+
+/* .connect-section {
+    padding: 25px;
+} */
+
+.connect-card-info {
+    background: linear-gradient(90deg,
+            #ff6b00,
+            #ff5a2f,
+            #f94144);
+
+    border-radius: 32px;
+    padding: 30px 40px;
+    color: white;
+}
+
+.connect-card-info h2 {
+    font-family: Georgia, serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.connect-card-info p {
+    font-size: 17px;
+    max-width: 700px;
+    margin-bottom: 30px;
+}
+
+.social-icons-info {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.icon-box-info {
+    width: 60px;
+    height: 60px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #ff7300;
+    font-size: 30px;
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+}
+
+.icon-box-info svg {
+    font-size: 25px;
+}
+
+.icon-box-info:hover {
+    transform: translateY(-6px);
+    background: #fff8f5;
+    box-shadow: 0 10px 25px rgba(255, 255, 255, 0.25);
+    color: #f94144;
+}
+
+@media (max-width:768px) {
+    .connect-card-info {
+        padding: 35px 25px;
+    }
+
+    .connect-card-info h2 {
+        font-size: 36px;
+    }
+
+    .connect-card-info p {
+        font-size: 18px;
+    }
+
+    .icon-box-info {
+        width: 65px;
+        height: 65px;
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-info-section h1 {
+        font-size: 36px;
+    }
+
+    .info-item {
+        gap: 18px;
+        padding: 18px;
+    }
+
+    .info-item p {
+        font-size: 18px;
+    }
+}

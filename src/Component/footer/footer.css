@@ -1,0 +1,132 @@
+.gap-2-5 {
+    gap: 12px;
+}
+
+.footer-section {
+    background: #111827;
+    color: rgb(156 163 175);
+    padding: 70px 0 35px;
+    height: 64vh;
+    width: 100%;
+}
+
+.footer-logo {
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: white;
+}
+
+.brand-name,
+.footer-title {
+    color: #ff7a18;
+    font-family: Georgia, serif;
+    font-weight: 700;
+}
+
+.brand-name {
+    color: #fff;
+    font-size: 23px;
+}
+
+.footer-title {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.footer-text {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.social-icons a {
+    width: 40px;
+    height: 40px;
+    background: #ff7614;
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 18px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.icon-li,
+.heart-icon {
+    color: #ff7614;
+}
+
+.footer-links,
+.contact-info {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links .arrow-icon {
+    font-size: 30px;
+}
+
+.footer-links li,
+.contact-info li {
+    font-size: 18px;
+}
+
+.footer-links a {
+    color: #9fb3cf;
+    text-decoration: none;
+}
+
+.footer-links i,
+.contact-info i {
+    color: #ff7614;
+    margin-right: 12px;
+}
+
+.newsletter-box {
+    display: flex;
+    max-width: 370px;
+    height: 42px;
+    border-radius: 30px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.newsletter-box input {
+    flex: 1;
+    border: none;
+    padding: 0 20px;
+    font-size: 18px;
+    outline: none;
+}
+
+.newsletter-box button {
+    width: 85px;
+    border: none;
+    background: #ff7614;
+    color: #fff;
+    font-size: 22px;
+}
+
+.mail-btn .email-icon {
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+
+hr {
+    border-color: #2d3748;
+    margin: 40px 0;
+}
+
+.copyright {
+    font-size: 18px;
+}
+
+.copyright span {
+    color: #ff7614;
+    margin-left: 5px;
+}
+

@@ -1,38 +1,211 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: 'Barlow', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.font-medium {
+  font-weight: 500;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+.home-page {
+  margin-top: 85px;
+  padding: 10px 10px;
+}
+
+.hero-section {
+  /* width: 100vh; */
+  height: 84vh;
+  background-image: url("./Assets/Raji.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  object-fit: fill;
+}
+
+.hero-heading::after {
+  content: "";
+  display: block;
+  width: 90px;
+  height: 4px;
+  background: linear-gradient(to right, orange, tomato);
+  margin: 0 36%;
+  border-radius: 20px;
+  align-content: center;
+}
+
+.hero-content {
+  margin: 80px 0px 80px 28px;
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+}
+
+.hero-heading {
+  font-family: "Playfair", serif;
+  font-size: 3rem;
+}
+
+.hero-para {
+  line-height: 1.625;
+  font-size: 16px;
+}
+
+.custom-btn {
+  position: relative;
+  overflow: hidden;
+  width: 42%;
+  font-size: 18px;
+  background: linear-gradient(90deg, #ff9800, #ff5252);
   color: white;
+  border: none;
+  padding: 18px 45px;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 600;
+  z-index: 1;
+
+  transition: 0.15s;
 }
 
-.App-link {
-  color: #61dafb;
+/* center white circle */
+.custom-btn::before {
+  content: "";
+  position: absolute;
+
+  width: 20px;
+  height: 20px;
+
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform .6s ease;
+
+  z-index: -1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* hover: dot → big */
+.custom-btn:hover::before {
+  transform: translate(-50%, -50%) scale(15);
+}
+
+/* text always top */
+.custom-btn span {
+  position: relative;
+  z-index: 2;
+}
+
+@media screen and (max-width:1441px) {
+  .footer-section {
+    height: 50vh;
   }
-  to {
-    transform: rotate(360deg);
+
+  .hero-heading {
+    font-size: 44px;
+  }
+
+  .hero-para {
+    font-size: 25px;
+  }
+
+  .hero-content {
+    padding: 45px;
+  }
+}
+
+@media screen and (max-width:320px) {
+
+  .heroSwiper,
+  .swiper,
+  .swiper-slide {
+    width: 100%;
+    height: 71vh;
+  }
+
+  .hero-section {
+    width: 100px;
+    height: 53vh;
+  }
+
+  .hero-content {
+    margin: 10px 0;
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+
+  .hero-heading::after {
+    margin: 2% 30%;
+    width: 65px;
+  }
+
+  .hero-para {
+    font-size: 10px;
+  }
+
+  .custom-btn {
+    width: 60%;
+    font-size: 10px;
+    padding: 0 !important;
+  }
+
+  .hero-heading {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width:378px) {
+  .hero-content {
+    margin: 0;
+    padding: 20px;
+  }
+
+  .hero-heading {
+    font-size: 20px;
+  }
+
+  .hero-para {
+    font-size: 13px;
+  }
+
+  .custom-btn {
+    width: 80%;
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .hero-section {
+    height: 62vh;
+  }
+}
+
+@media screen and (max-width:430px) {
+  .hero-content {
+    margin: 0;
+    padding: 20px;
+  }
+
+  .hero-heading {
+    font-size: 24px;
+  }
+
+  .hero-para {
+    font-size: 16px;
+  }
+
+  .custom-btn {
+    width: 95%;
+  }
+
+  .hero-section {
+    height: 69vh;
   }
 }

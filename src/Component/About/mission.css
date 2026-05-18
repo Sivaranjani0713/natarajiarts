@@ -1,0 +1,142 @@
+.mission-section {
+    background: #f8f9fb;
+    padding: 80px 0;
+}
+
+.mission-heading {
+    margin-bottom: 70px;
+}
+
+.mission-heading h2 {
+    position: relative;
+    display: inline-block;
+    font-size: 56px;
+    font-weight: 800;
+    color: #1f2937;
+    font-family: Georgia, "Times New Roman", serif;
+    margin-bottom: 42px;
+}
+
+.mission-heading h2::after {
+    content: "";
+    position: absolute;
+    width: 76px;
+    height: 3px;
+    background: #ff6b35;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+}
+
+.mission-heading p {
+    font-size: 20px;
+    color: #3f4d5f;
+    margin: 0;
+}
+
+.mission-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 30px;
+    min-height: 365px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.11);
+    transition: all 0.3s ease;
+}
+
+.mission-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 38px rgba(0, 0, 0, 0.16);
+}
+
+.mission-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #ff7a22, #f04e4e);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 34px;
+}
+
+.mission-icon i {
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.mission-card h3 {
+    font-size: 25px;
+    font-weight: 800;
+    color: #1f2937;
+    font-family: Georgia, "Times New Roman", serif;
+    margin-bottom: 24px;
+}
+
+.mission-card p {
+    font-size: 17px;
+    line-height: 1.75;
+    color: #4b5d73;
+    margin: 0;
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+    .mission-section {
+        padding: 70px 0;
+    }
+
+    .mission-heading {
+        margin-bottom: 50px;
+    }
+
+    .mission-heading h2 {
+        font-size: 44px;
+    }
+
+    .mission-card {
+        min-height: auto;
+        padding: 36px;
+    }
+
+    .mission-card p {
+        font-size: 19px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 575px) {
+    .mission-section {
+        padding: 55px 0;
+    }
+
+    .mission-heading h2 {
+        font-size: 34px;
+        margin-bottom: 34px;
+    }
+
+    .mission-heading p {
+        font-size: 16px;
+    }
+
+    .mission-card {
+        padding: 28px;
+    }
+
+    .mission-icon {
+        width: 68px;
+        height: 68px;
+    }
+
+    .mission-icon i {
+        font-size: 27px;
+    }
+
+    .mission-card h3 {
+        font-size: 26px;
+    }
+
+    .mission-card p {
+        font-size: 17px;
+        line-height: 1.65;
+    }
+}
