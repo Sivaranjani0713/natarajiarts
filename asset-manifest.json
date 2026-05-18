@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/natarajiarts/static/css/main.bc391bdf.css",
-    "main.js": "/natarajiarts/static/js/main.7173361a.js",
+    "main.js": "/natarajiarts/static/js/main.22e5cf65.js",
     "static/js/453.7cfc29b9.chunk.js": "/natarajiarts/static/js/453.7cfc29b9.chunk.js",
     "static/media/veenaart.png": "/natarajiarts/static/media/veenaart.6e6194b42b1f3f734c91.png",
     "static/media/veenabright.png": "/natarajiarts/static/media/veenabright.b08ea4400d2bcd2beb77.png",
@@ -36,11 +36,11 @@
     "static/media/event3.jpg": "/natarajiarts/static/media/event3.952b1c51e783dcb99205.jpg",
     "index.html": "/natarajiarts/index.html",
     "main.bc391bdf.css.map": "/natarajiarts/static/css/main.bc391bdf.css.map",
-    "main.7173361a.js.map": "/natarajiarts/static/js/main.7173361a.js.map",
+    "main.22e5cf65.js.map": "/natarajiarts/static/js/main.22e5cf65.js.map",
     "453.7cfc29b9.chunk.js.map": "/natarajiarts/static/js/453.7cfc29b9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bc391bdf.css",
-    "static/js/main.7173361a.js"
+    "static/js/main.22e5cf65.js"
   ]
 }
